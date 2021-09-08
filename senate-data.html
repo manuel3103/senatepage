@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="stylesheet" href="styles/TGIF.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mansalva&display=swap">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+		<title>Senate</title>
+	  </head>
+	<body>
+		<div class="container">
+			<blockquote>
+				<div><img src="imagen/63667313.jpg" alt="logo" style="width:50px;" align="left"></div>
+				<div align="right">
+					<img src="imagen/como-escribir-correo-formal.jpg" alt="email" style="width: 40px;">
+					 <a href="info@tgif.net">info@tgif.net</a>
+				</div>
+			</blockquote>
+		</div>
+		<header>
+			<div class="container">
+			<ul class="nav nav-pills">
+				<li class="nav-item">
+					<a class="nav-link active" href="senate-data.html">Senate data</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="home.html">Home</a>
+				  </li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Congress 113</a>
+					<div class="dropdown-menu">
+					<a class="dropdown-item" href="house-data.html">House</a>
+					<a class="dropdown-item" href="senate-data.html">Senate</a></div>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Attendance</a>
+					<div class="dropdown-menu">
+					<a class="dropdown-item" href="house-aten.html">House</a>
+					<a class="dropdown-item" href="senate-atten.html">Senate</a></div>
+				</li>
+				<li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Party loyalty</a>
+                    <div class="dropdown-menu">
+                    <a class="dropdown-item" href="house-party.html">House</a>
+                    <a class="dropdown-item" href="senate-party.html">Senate</a></div>
+                </li>
+			</ul>
+			</div>
+		</header>
+		<section>
+			<div class="container">
+				<h2>Senators</h2>
+				<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus similique magnam nisi eligendi, ipsum, dolore deleniti sequi nostrum cum, aliquid dolorem beatae maxime exercitationem ducimus quia recusandae consectetur deserunt iste.>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis natus recusandae voluptas delectus aut expedita dolore vero earum. Eligendi vel obcaecati veritatis est quae ipsa enim voluptas laborum culpa quod?</p>
+			</div>
+			<div class="container" id="app">
+				<table class="table table-bordered table-sm" style= "text-align: center;">
+					<thead>
+					<tr>
+						<th>Name</th>
+						<th>Party</th>
+						<th>State</th>
+						<th>Seniority</th>
+						<th>Percentage of votes with party</th>
+					</tr>
+					</thead>
+					<tbody>
+					<tr v-for="value in members">
+						<td><a href="value.url">{{value.last_name}} {{value.first_name}} {{value.middle_name}}</a></td>
+						<td>{{value.party}}</td>
+						<td>{{value.state}}</td>
+						<td>{{value.seniority}}</td>
+						<td>{{value.votes_with_party_pct}}</td>
+					</tr>
+					</tbody>
+				</table>
+			</div>
+		</section>
+			<footer class= "bg-light" style= "text-align: center; border: solid grey; padding: 10px;">©2016TGIF|All Rights Reserved</footer>  
+			<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+			<script src="vue.js"></script>
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+			
+		<!-- Popper JS -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+					
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+	</body>
+</html>

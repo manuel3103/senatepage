@@ -1,0 +1,27 @@
+.tope{
+    position: absolute;
+    width: 1190px;
+    top: 465px;
+    right: 150px;
+
+}
+.subtitle h4{
+    position: absolute;
+    width: 1190px;
+    top: 425px;
+    right: 150px;
+}
+.card{
+    position: relative;
+    top: 1390px;
+    width: 700px;
+    left: 450px;    
+    color:black;
+}
+.pie{
+    position: relative;
+    top: 400px;
+    width: 700px;
+    left: 450px;   
+    color: black; 
+}
